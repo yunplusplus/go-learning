@@ -8,7 +8,7 @@ import (
 	"time"
 )
 func CreateConnection(){
-	db, err := sql.Open("mysql","root:123456@tcp(127.0.0.1:3306)/toll")
+	db, err := sql.Open("mysql","root:123456@tcp(127.0.0.1:3306)/demo")
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -21,7 +21,7 @@ func CreateConnection(){
 	if err != nil {
 		panic(err.Error()) // proper error handling instead of panic in your app
 	}
-	rows, err := db.Query("SELECT * FROM ls_toll_lane")
+	rows, err := db.Query("SELECT * FROM system_user ")
 	if err != nil {
 		panic(err.Error()) // proper error handling instead of panic in your app
 	}
