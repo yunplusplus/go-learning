@@ -11,4 +11,5 @@ require (
 	github.com/dubbogo/jsonparser v1.0.1 //indirect
 	//gopkg.in/natefinch/lumberjack.v2 日志切割
 	gopkg.in/natefinch/lumberjack.v2 v2.0.0
+    github.com/go-sql-driver/mysql v1.6.0 //indirect
 )
